@@ -20,7 +20,7 @@
     virtual void sendEventsForCurrentState() = 0;
 
   protected:
-    // Call back function to send events.
+    // Callback function to send events.
     void (*sendEvent) (uint16_t eventIndexToSend);
 
   private:
