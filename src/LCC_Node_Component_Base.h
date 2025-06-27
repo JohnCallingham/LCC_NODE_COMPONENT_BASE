@@ -15,8 +15,13 @@
     /**
      * Pure virtual functions to force them to be overridden in derived classes.
      */
+    // Used when event is received to determine if it is for this component.
     virtual bool eventIndexMatches(uint16_t index) = 0;
+
+    // Used when JMRI queries the state of an event index.
     virtual bool eventIndexMatchesCurrentState(uint16_t index) = 0;
+
+    // Used when a JMRI hub connection is made so that JMRI knows the state of this component.
     virtual void sendEventsForCurrentState() = 0;
 
   protected:
