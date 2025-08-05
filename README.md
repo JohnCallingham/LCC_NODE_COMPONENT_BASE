@@ -1,5 +1,5 @@
 # LCC_NODE_COMPONENT_BASE
 
-This library has been designed to be part of the ESP32_2Servo_2Frog_2TOTI_WiFi program. It is part of a suite of libraries which can be used as part of an OpenLCB/LCC node.
+This component is part of a suite of components which can be used as part of a program which implements an OpenLCB/LCC node. It has been developed using PlatformIO and has been tested on an Arduino Nano ESP32.
 
-This library has been developed using PlatformIO.
+The file LCC_Node_Component_Base.h contains a single class which is designed to be an abstract base class which derived classes will inherit. This base class enforces an interface for the derived classes and also provides a callback function which is used to send LCC events.

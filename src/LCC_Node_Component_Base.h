@@ -3,9 +3,10 @@
 
 /**
  * The base class for the following LCC node components;-
- * - LCC_Servo
- * - Frog
- * - TOTI
+ * - LCC_SERVO
+ * - LCC_CROSSOVER
+ * - LCC_FROG
+ * - LCC_TOTI
  */
 
  class LCC_Node_Component_Base {
