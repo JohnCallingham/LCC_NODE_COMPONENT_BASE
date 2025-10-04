@@ -13,11 +13,14 @@
   public:
     void setSendEventCallbackFunction(void (*sendEvent)(uint16_t eventIndexToSend)) { this->sendEvent = sendEvent; }
 
+    void setTestStartEventIndex(uint16_t index) { testStartEventIndex = index; }
+    void setTestStopEventIndex(uint16_t index) { testStopEventIndex = index; }
+
     /**
      * Pure virtual functions to force them to be overridden in derived classes.
      */
 
-     // Used when an event is received to determine if it is for this component.
+    // Used when an event is received to determine if it is for this component.
     virtual bool eventIndexMatches(uint16_t index) = 0;
 
     // Used when JMRI queries the state of an event index.
@@ -29,6 +32,10 @@
   protected:
     // Callback function to send events.
     void (*sendEvent) (uint16_t eventIndexToSend);
+
+    // The event indexes which will start and stop the test cycle.
+    uint16_t testStartEventIndex;
+    uint16_t testStopEventIndex;
 
   private:
 
