@@ -37,6 +37,12 @@
     uint16_t testStartEventIndex;
     uint16_t testStopEventIndex;
 
+    /**
+     * The following are used for controlling the board testing cycle.
+     */
+    bool testing = false;
+    unsigned long testingTimer; // Contains the value of millis() for the next change in the testing cycle.
+
   private:
 
  };
