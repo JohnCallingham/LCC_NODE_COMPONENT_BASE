@@ -1,12 +1,15 @@
 #ifndef LCC_NODE_COMPONENT_BASE_H
 #define LCC_NODE_COMPONENT_BASE_H
 
+#include <Arduino.h>
+
 /**
- * The base class for the following LCC node components;-
- * - LCC_SERVO
- * - LCC_CROSSOVER
- * - LCC_FROG
- * - LCC_TOTI
+ * The base class for the following classes;-
+ * - Servo_LCC (in component LCC_SERVO)
+ * - Crossover (in component LCC_CROSSOVER)
+ * - Frog (in component LCC_FROG)
+ * - TOTI (in component LCC_TOTI)
+ * - ToFSensorBase (in component LCC_TOF_SENSOR)
  */
 
  class LCC_Node_Component_Base {
