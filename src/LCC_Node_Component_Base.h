@@ -15,7 +15,7 @@
  class LCC_Node_Component_Base {
   public:
     void setSendEventCallbackFunction(void (*sendEvent)(uint16_t eventIndexToSend)) { this->sendEvent = sendEvent; }
-    void setLogMessageCallbackFunction(void (*logMessage)(String message)) { this->logMessage = logMessage; }
+    void setLogMessageCallbackFunction(void (*logMessage)(const char* format, ...)) { this->logMessage = logMessage; }
 
     void setTestStartEventIndex(uint16_t index) { testStartEventIndex = index; }
     void setTestStopEventIndex(uint16_t index) { testStopEventIndex = index; }
@@ -38,7 +38,7 @@
     void (*sendEvent) (uint16_t eventIndexToSend);
 
     // Callback function for logging.
-    void (*logMessage) (String message);
+    void (*logMessage) (const char* format, ...);
 
     // The event indexes which will start and stop the test cycle.
     uint16_t testStartEventIndex;
