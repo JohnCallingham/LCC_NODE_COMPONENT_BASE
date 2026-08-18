@@ -2,6 +2,7 @@
 #define LCC_NODE_COMPONENT_BASE_H
 
 #include <Arduino.h>
+#include "telnetLCC.h"
 
 /**
  * The base class for the following classes;-
@@ -12,7 +13,7 @@
  * - ToFSensorBase (in component LCC_TOF_SENSOR)
  */
 
- class LCC_Node_Component_Base {
+class LCC_Node_Component_Base {
   public:
     void setSendEventCallbackFunction(void (*sendEvent)(uint16_t eventIndexToSend)) { this->sendEvent = sendEvent; }
     void setLogMessageCallbackFunction(void (*logMessage)(const char* format, ...)) { this->logMessage = logMessage; }
