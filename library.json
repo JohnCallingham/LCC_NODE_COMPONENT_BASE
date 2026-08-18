@@ -1,4 +1,8 @@
 {
   "name": "LCC_NODE_COMPONENT_BASE",
-  "version": "0.0.0+20250616124047"
+  "version": "0.0.0+20250616124047",
+  "dependencies":
+    {
+      "TelnetLCC": "https://github.com/JohnCallingham/LCC_TELNET"
+    }
 }
