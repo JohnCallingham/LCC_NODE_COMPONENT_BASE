@@ -3,6 +3,6 @@
   "version": "0.0.0+20250616124047",
   "dependencies":
     {
-      "TelnetLCC": "https://github.com/JohnCallingham/LCC_TELNET"
+      "LCC_TELNET": "https://github.com/JohnCallingham/LCC_TELNET"
     }
 }
